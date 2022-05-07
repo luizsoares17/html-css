@@ -17,6 +17,7 @@ header {
 }
 
 header >h1 {
+    font-family: ;
     padding: 50px;
     font-variant: small-caps;
     font-size: verdana, geneva, tahoma, sans-serif;
@@ -44,6 +45,10 @@ section {
     padding-left: 30px;
 }
 
+section >p {
+    padding-bottom: 2em;
+}
+
 section.normal {
     background-color: white;
     color: black;
@@ -51,19 +56,31 @@ section.normal {
 
 
 section.imagem{
-    background-image: url('pacote-d012/imagens/background001.jpg');
-    background-repeat: no-repeat;
-    background-position: right center;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px;
     background-size: cover;
     background-attachment: fixed;
-    color: white;
     }
 
 section.imagem >p {
     width: 400px;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.253);
-    
+    text-shadow: 1px 1px 0px black;
+    }    
 
+section#img01 {
+    background-image: url('pacote-d012/imagens/background001.jpg');
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url('pacote-d012/imagens/background002.jpg');
+    background-repeat: no-repeat;
+    background-position: right center;
+}
 
 footer {
     background-color: black;
