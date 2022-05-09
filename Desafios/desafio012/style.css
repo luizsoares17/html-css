@@ -1,5 +1,15 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'Passion_One';
+    src: url('pacote-d012/fonts/Passion_One/PassionOne-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Sriracha';
+    src: url('pacote-d012/fonts/Sriracha/Sriracha-Regular.ttf');
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -11,13 +21,13 @@ html, body {
 }
 
 header {
+    font-family: 'Passion_One';
     background-color: black;
     color: white;
     text-align: center;
 }
 
 header >h1 {
-    font-family: ;
     padding: 50px;
     font-variant: small-caps;
     font-size: verdana, geneva, tahoma, sans-serif;
@@ -39,6 +49,7 @@ header a:hover, footer a:hover {
 }
 
 section {
+    font-family: 'Sriracha';
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
