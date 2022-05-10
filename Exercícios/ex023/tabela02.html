@@ -20,8 +20,12 @@
             padding: 10px;
         }
         
-        .numero {
+        td.numero {
             text-align: right;
+        }
+
+        th.pos {
+            width: 10px;
         }
 
         thead, tfoot {
@@ -29,31 +33,44 @@
             color: white;
 
         }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightblue;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightblue;
+            /*-- odd - seleciona as linhas impares 
+                even - seleciona as linhas pares
+            */
+        }
     </style>
 </head>
 <body>
     <h1>
         Uso de Tabelas Grandes
     </h1>
-    <h2>
-        Lista de estados do Brasil por população
-    </h2>
+    
     <!--
     Anatomia para tabelas Grandes
     TABLE
+        CAPTION
         THEAD
-            TR, TD, TH
+            TR linha, TD dato, TH título
         TBODY
             TR, TD, TH
         TFOOT
             TR, TD, TH    
     -->
 <Table>
+    <caption>Lista de estados do Brasil por população</caption>
     <Thead>
         <tr>
-            <th>Posição</th>
-            <th>Estado</th>
-            <th>Capital</th>
+            <th class="pos">Posição</th>
+            <th scope="col">Estado</th>
+            <th scope="col">Capital</th>
             <th>População</th>
         </tr>
     </Thead>
@@ -225,7 +242,7 @@
 
     <tfoot>
         <tr>
-            <th>
+            <th scope="row">
                 Total de Habitantes
             </th>
             <td></td>
