@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de login</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            background-image: url(imagem/pc.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        main {
+            background-color: white;
+            margin: 10%;
+            border-radius: 20px;
+            width: 400px;
+            height: 500px;
+            padding: 10px;
+        }
+
+        img {
+            height: 100px;
+            width: 400px;
+            
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #iemail {
+            background-color: rgb(170, 170, 224);
+            border-style: none;
+            width: 400px;
+            font-size: 30px;
+            border-radius: 20px;
+
+        }
+
+        #isenha {
+            background-color: rgb(170, 170, 224);
+            border-style: none;
+            width: 400px;
+            font-size: 30px;
+            border-radius: 20px;
+        }
+
+        #ibox {
+            font-size: 30px;
+            border-radius: 20px;
+        }
+
+        #ientrar {
+            background-color: blue;
+            width: 400px;
+            color: white;
+            font-size: 30px;
+            padding: 5px;
+            border-radius: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<main>
+    <h1>LOGIN</h1>
+    <img src="imagem/laptop.jpeg" alt="pc">
+    <form action="senha.php">        
+        <label for="iemail">
+            <p>Email <input type="text" name="Email" id="iemail" placeholder="Digite seu email"></p> 
+        </label>
+        <label for="isenha">
+            <p>Senha <input type="text" name="Senha" id="isenha" placeholder="Digite sua senha"></p>
+        </label>
+        <label for="ibox">
+            <p>Lembrar-me <input type="checkbox" id="ibox"></p>
+        </label>
+        <p> <input type="submit" value="Entrar" id="ientrar"></p>
+    </form>
+</main>
+</body>
+</html>
